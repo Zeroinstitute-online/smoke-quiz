@@ -1,0 +1,90 @@
+[
+    {
+      "type": "single-choice",
+      "question": "Which of these is ...?",
+      "options": [
+        {
+          "text": "Option 1",
+          "icon": "path/to/icon1.png",
+          "feedback": "Feedback for option 1"
+        },
+        {
+            "text": "Option 2",
+            "icon": "path/to/icon2.png",
+            "feedback": "Feedback for option 2"
+          }
+        ]
+    },
+    {
+      "type": "multiple-choice",
+      "question": "Select all that apply ...",
+      "options": [
+        {
+          "text": "Option A",
+          "icon": "path/to/iconA.png"
+        },
+        {
+          "text": "Option B",
+          "icon": "path/to/iconB.png"
+        }
+      ],
+      "feedback": [
+        {
+          "range": [1, 2],
+          "text": "Feedback for 1-2 options selected"
+        },
+        {
+          "range": [3, 5],
+          "text": "Feedback for 3-5 options selected"
+        }
+      ]
+    },    
+    {
+        "type": "rating",
+        "question": "How do you feel about ...?",
+        "options": [
+            {
+                "value": -2,
+                "emoji": "😢",
+                "feedback": "Feedback for -2 rating"
+            },
+            {
+                "value": -1,
+                "emoji": "👎",
+                "feedback": "Feedback for -1 rating"
+            },
+            {
+                "value": -0,
+                "emoji": "😐",
+                "feedback": "Feedback for 0 rating"
+            },
+            {
+                "value": 1,
+                "emoji": "👍",
+                "feedback": "Feedback for 1 rating"
+            },
+            {
+                "value": 2,
+                "emoji": "🤩",
+                "feedback": "Feedback for 2 rating"
+            }
+        ]
+    },
+    {
+        "type": "image-choice",
+        "question": "Which image represents ...?",
+        "options": [
+          {
+            "text": "Option 1",
+            "image": "path/to/image1.png",
+            "feedback": "Feedback for option 1"
+          },
+          {
+            "text": "Option 2",
+            "image": "path/to/image2.png",
+            "feedback": "Feedback for option 2"
+          }
+        ]
+      }
+]
+  

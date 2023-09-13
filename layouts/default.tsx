@@ -1,5 +1,4 @@
 import { Navbar } from "@/components/navbar";
-import { Link } from "@nextui-org/link";
 import { Head } from "./head";
 
 export default function DefaultLayout({
@@ -15,7 +14,11 @@ export default function DefaultLayout({
 				{children}
 			</main>
 			<footer className="w-full flex items-center justify-center py-3">
-				<Link
+				<div className="text-center">
+					<div className="text-[10px]">By using this service you agree with Privacy policy and Terms of use</div>
+					<div>289 M.1 Koh Phangan, Surat Thai, Thailand</div>
+				</div>
+				{/* <Link
 					isExternal
 					className="flex items-center gap-1 text-current"
 					href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
@@ -23,7 +26,7 @@ export default function DefaultLayout({
 				>
 					<span className="text-default-600">Powered by</span>
 					<p className="text-primary">NextUI</p>
-				</Link>
+				</Link> */}
 			</footer>
 		</div>
 	);
